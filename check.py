@@ -31,7 +31,7 @@ model.add(Dense(1))
 model.compile(optimizer="adam", loss="mean_squared_error")
 model.fit(x, y, epochs=10, batch_size=32, verbose=0)
 
-print("Model ready hai!")
+print("Model is ready!")
 
 last_60 = scaled[-60:]
 last_60 = last_60.reshape(1, 60, 1)
